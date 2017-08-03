@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "615142541904",
+    "firebase_url": "https://letschat-cede7.firebaseio.com",
+    "project_id": "letschat-cede7",
+    "storage_bucket": "letschat-cede7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615142541904:android:3818be65f0acfac9",
+        "android_client_info": {
+          "package_name": "com.example.navanee.letschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615142541904-b5583kc3t4rqa37n823m9bma44uc9ad7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.navanee.letschat",
+            "certificate_hash": "80196CEDFD3F25C7691ABEB1DEE1876D06290EC7"
+          }
+        },
+        {
+          "client_id": "615142541904-799028lvbeh757iu01u56th7utq5p7jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALXB3TEeYXJhmFCJbTQaZtNHkSEVR_yGU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615142541904-799028lvbeh757iu01u56th7utq5p7jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

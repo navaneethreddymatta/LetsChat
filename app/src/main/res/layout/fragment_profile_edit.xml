@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.navanee.letschat.ProfileEditFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            app:srcCompat="@drawable/avatarbig"
+            android:layout_marginTop="15dp"
+            android:id="@+id/pImage"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:text="@string/profile_edit_photo"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/pImage"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editPhotoBtn"
+            android:layout_height="25dp"
+            android:visibility="visible"
+            tools:text="@string/profile_edit_photo"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="@string/profile_firstName"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:layout_below="@+id/editPhotoBtn"
+            android:id="@+id/textView3"
+            tools:text="@string/profile_firstName"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:text="@string/profile_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:id="@+id/textView5"
+            tools:text="@string/profile_lastName"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:text="@string/profile_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:id="@+id/genderLabel"
+            tools:text="@string/profile_gender"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:text="@string/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/genderLabel"
+            android:layout_alignStart="@+id/genderLabel"
+            android:id="@+id/textView10"
+            tools:text="@string/profile_email"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginStart="10dp"
+            android:id="@+id/pFirstName"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp" />
+
+        <EditText
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignStart="@+id/pFirstName"
+            android:id="@+id/pLastName"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp" />
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/genderLabel"
+            android:layout_alignStart="@+id/pLastName"
+            android:id="@+id/genderGroup"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:text="@string/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/textView10"
+            android:id="@+id/pEmail"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/genderGroup" />
+
+        <Button
+            android:text="@string/profile_save_Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_toStartOf="@+id/pFirstName"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pSaveBtn"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="70dp" />
+
+        <Button
+            android:text="@android:string/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pSaveBtn"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pCancel"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:minHeight="50dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
